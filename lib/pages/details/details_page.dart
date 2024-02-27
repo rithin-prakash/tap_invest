@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:tap_invest/core/assets_images.dart';
 import 'package:tap_invest/core/styles.dart';
 import 'package:tap_invest/pages/details/widgets/details_page_bottom_bar.dart';
+import 'package:tap_invest/pages/details/widgets/hightlights.dart';
 import 'package:tap_invest/pages/details/widgets/logo_list.dart';
 
 class DetailsPage extends StatelessWidget {
@@ -86,6 +87,12 @@ class DetailsPage extends StatelessWidget {
                   const SizedBox(height: 20),
                   //backed by
                   const LogoList(title: 'Backed By'),
+
+                  const SizedBox(height: 20),
+                  const Divider(),
+                  const SizedBox(height: 20),
+                  //highlights
+                  Highlights()
                 ],
               ),
             ),

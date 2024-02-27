@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:tap_invest/pages/details/widgets/details_page.dart';
+import 'package:tap_invest/pages/details/details_page.dart';
 
 void main() {
   runApp(const MyApp());
