@@ -12,27 +12,33 @@ class ButtonNormal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: const ButtonStyle(
-        backgroundColor: MaterialStatePropertyAll(
-          Color(0xff16A34A),
-        ),
-        shape: MaterialStatePropertyAll(
-          RoundedRectangleBorder(
-            side: BorderSide(
-              color: Color(0xFF15803D),
-            ),
-            borderRadius: BorderRadius.all(
-              Radius.circular(8),
+    return SizedBox(
+      height: 50,
+      child: ElevatedButton(
+        style: const ButtonStyle(
+          backgroundColor: MaterialStatePropertyAll(
+            Color(0xff16A34A),
+          ),
+          shape: MaterialStatePropertyAll(
+            RoundedRectangleBorder(
+              side: BorderSide(
+                color: Color(0xFF15803D),
+              ),
+              borderRadius: BorderRadius.all(
+                Radius.circular(8),
+              ),
             ),
           ),
         ),
-      ),
-      onPressed: onPressed,
-      child: Text(
-        title,
-        style:
-            const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        onPressed: onPressed,
+        child: Text(
+          title,
+          style: const TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+          ),
+        ),
       ),
     );
   }

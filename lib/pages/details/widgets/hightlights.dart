@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_svg/svg.dart';
+
+import 'package:tap_invest/core/assets_images.dart';
 import 'package:tap_invest/core/styles.dart';
 
 class Highlights extends StatelessWidget {
@@ -46,20 +49,19 @@ class HighlightsContainer extends StatelessWidget {
       width: 350,
       margin: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        border: Border.all(width: 1),
+        border: Border.all(width: .5, color: Colors.black26),
         borderRadius: BorderRadius.circular(12),
       ),
-      child: const Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Icon(
-            Icons.lightbulb,
-            color: Styles.stoneColor,
-          ),
-          SizedBox(height: 8),
-          Text(
-              'Agrizy was founded in 2021 by Vicky Dodani and Saket Chirania to provide an end-to-end solution to the agri processing market.')
+          SvgPicture.asset(AssetImages.lightbulb),
+          const SizedBox(height: 20),
+          const Text(
+            'Agrizy was founded in 2021 by Vicky Dodani and Saket Chirania to provide an end-to-end solution to the agri processing market.',
+            style: Styles.stoneTextStyles,
+          )
         ],
       ),
     );

@@ -20,9 +20,9 @@ class GridInfo extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFFD6D3D1).withOpacity(.3),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(width: 1),
+        border: Border.all(width: 1, color: Colors.black12),
       ),
-      height: 200,
+      height: 180,
       child: GridView.count(
         padding: EdgeInsets.zero,
         physics: const NeverScrollableScrollPhysics(),
@@ -31,15 +31,15 @@ class GridInfo extends StatelessWidget {
         children: [
           GridTile(
             child: Container(
-              height: 100,
+              height: 90,
               decoration: const BoxDecoration(
                 border: Border(
                   bottom: BorderSide(
-                    color: Colors.black,
+                    color: Colors.black12,
                     width: 1,
                   ),
                   right: BorderSide(
-                    color: Colors.black,
+                    color: Colors.black12,
                     width: 1,
                   ),
                 ),
@@ -49,11 +49,11 @@ class GridInfo extends StatelessWidget {
           ),
           GridTile(
             child: Container(
-              height: 100,
+              height: 90,
               decoration: const BoxDecoration(
                 border: Border(
                   bottom: BorderSide(
-                    color: Colors.black,
+                    color: Colors.black12,
                     width: 1,
                   ),
                 ),
@@ -63,11 +63,11 @@ class GridInfo extends StatelessWidget {
           ),
           GridTile(
             child: Container(
-              height: 100,
+              height: 90,
               decoration: const BoxDecoration(
                 border: Border(
                   right: BorderSide(
-                    color: Colors.black,
+                    color: Colors.black12,
                     width: 1,
                   ),
                 ),
@@ -77,7 +77,7 @@ class GridInfo extends StatelessWidget {
           ),
           GridTile(
             child: Container(
-              height: 100,
+              height: 90,
               decoration: const BoxDecoration(),
               child: fourth,
             ),

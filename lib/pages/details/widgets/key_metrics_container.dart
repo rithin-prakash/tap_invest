@@ -26,103 +26,120 @@ class KeyMetricsContainer extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(right: 20.0),
             child: GridInfo(
-              first: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'ACTIVE DEALS',
-                    style: Styles.stoneTextStyles.copyWith(fontSize: 14),
-                  ),
-                  Text.rich(
-                    TextSpan(
-                      text: '6',
-                      style: Styles.stoneTextStyles
-                          .copyWith(fontSize: 16, color: Colors.black),
-                      children: [
-                        TextSpan(
-                          text: ' of 18',
-                          style: Styles.stoneTextStyles.copyWith(fontSize: 16),
-                        )
-                      ],
+              first: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'ACTIVE DEALS',
+                      style: Styles.stoneTextStyles.copyWith(fontSize: 14),
                     ),
-                  ),
-                ],
+                    Text.rich(
+                      TextSpan(
+                        text: '6',
+                        style: Styles.stoneTextStyles
+                            .copyWith(fontSize: 16, color: Colors.black),
+                        children: [
+                          TextSpan(
+                            text: ' of 18',
+                            style:
+                                Styles.stoneTextStyles.copyWith(fontSize: 16),
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
-              second: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'RAISED',
-                    style: Styles.stoneTextStyles.copyWith(fontSize: 14),
-                  ),
-                  Text.rich(
-                    TextSpan(
-                      text: '₹ ',
-                      style: Styles.stoneTextStyles.copyWith(fontSize: 16),
-                      children: [
-                        TextSpan(
-                          text: '6.94',
-                          style: Styles.stoneTextStyles
-                              .copyWith(fontSize: 16, color: Colors.black),
-                        ),
-                        TextSpan(
-                          text: ' Cr',
-                          style: Styles.stoneTextStyles.copyWith(
-                            fontSize: 16,
-                          ),
-                        ),
-                      ],
+              second: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'RAISED',
+                      style: Styles.stoneTextStyles.copyWith(fontSize: 14),
                     ),
-                  ),
-                ],
+                    Text.rich(
+                      TextSpan(
+                        text: '₹ ',
+                        style: Styles.stoneTextStyles.copyWith(fontSize: 16),
+                        children: [
+                          TextSpan(
+                            text: '6.94',
+                            style: Styles.stoneTextStyles
+                                .copyWith(fontSize: 16, color: Colors.black),
+                          ),
+                          TextSpan(
+                            text: ' Cr',
+                            style: Styles.stoneTextStyles.copyWith(
+                              fontSize: 16,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
-              third: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'MATURED DEALS',
-                    style: Styles.stoneTextStyles.copyWith(fontSize: 14),
-                  ),
-                  Text.rich(
-                    TextSpan(
-                      text: '12',
-                      style: Styles.stoneTextStyles
-                          .copyWith(fontSize: 16, color: Colors.black),
-                      children: [
-                        TextSpan(
-                          text: ' of 18',
-                          style: Styles.stoneTextStyles.copyWith(
-                            fontSize: 16,
-                          ),
-                        ),
-                      ],
+              third: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'MATURED DEALS',
+                      style: Styles.stoneTextStyles.copyWith(fontSize: 14),
                     ),
-                  ),
-                ],
+                    Text.rich(
+                      TextSpan(
+                        text: '12',
+                        style: Styles.stoneTextStyles
+                            .copyWith(fontSize: 16, color: Colors.black),
+                        children: [
+                          TextSpan(
+                            text: ' of 18',
+                            style: Styles.stoneTextStyles.copyWith(
+                              fontSize: 16,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
-              fourth: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'ON TIME PAYMENT',
-                    style: Styles.stoneTextStyles.copyWith(fontSize: 14),
-                  ),
-                  Text.rich(
-                    TextSpan(
-                      text: '100',
-                      style: Styles.stoneTextStyles
-                          .copyWith(fontSize: 16, color: Colors.black),
-                      children: [
-                        TextSpan(
-                          text: ' %',
-                          style: Styles.stoneTextStyles.copyWith(
-                            fontSize: 16,
-                          ),
-                        ),
-                      ],
+              fourth: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'ON TIME PAYMENT',
+                      style: Styles.stoneTextStyles.copyWith(fontSize: 14),
                     ),
-                  ),
-                ],
+                    Text.rich(
+                      TextSpan(
+                        text: '100',
+                        style: Styles.stoneTextStyles
+                            .copyWith(fontSize: 16, color: Colors.black),
+                        children: [
+                          TextSpan(
+                            text: ' %',
+                            style: Styles.stoneTextStyles.copyWith(
+                              fontSize: 16,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),

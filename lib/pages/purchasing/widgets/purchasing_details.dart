@@ -23,6 +23,7 @@ class PurchasingDetails extends StatelessWidget {
                 .titleLarge
                 ?.copyWith(fontWeight: FontWeight.bold),
           ),
+          const SizedBox(height: 5),
           const Row(
             children: [
               Text(

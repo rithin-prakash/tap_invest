@@ -12,23 +12,26 @@ class SignContractPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(AssetImages.contractPng),
-            const SizedBox(height: 12),
-            ButtonNormal(
-              onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (_) => const AllDonePage(),
-                  ),
-                );
-              },
-              title: 'Sign Contract',
-            )
-          ],
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image.asset(AssetImages.contractPng),
+              const SizedBox(height: 12),
+              ButtonNormal(
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const AllDonePage(),
+                    ),
+                  );
+                },
+                title: 'Sign Contract',
+              )
+            ],
+          ),
         ),
       ),
     );

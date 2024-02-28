@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:tap_invest/core/styles.dart';
 
 class AmountContainer extends StatefulWidget {
   const AmountContainer({
@@ -21,23 +22,26 @@ class _AmountContainerState extends State<AmountContainer> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Text('Enter Amount'),
+        const Text(
+          'ENTER AMOUNT',
+          style: Styles.stoneTextStyles,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               '₹',
-              style: Theme.of(context)
-                  .textTheme
-                  .titleLarge
-                  ?.copyWith(fontSize: 24),
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                    fontSize: 24,
+                    color: Styles.stoneColor,
+                  ),
             ),
             SizedBox(
               width: 200,
               child: TextFormField(
                 controller: widget.controller,
                 keyboardType: TextInputType.number,
-                style: const TextStyle(fontSize: 24),
+                style: const TextStyle(fontSize: 24, color: Styles.stoneColor),
                 inputFormatters: [
                   FilteringTextInputFormatter.digitsOnly,
                 ],

@@ -12,7 +12,7 @@ class DetailsPageBottomBar extends StatelessWidget {
     return Container(
       height: 100,
       decoration: const BoxDecoration(
-        color: Color(0xFFFBFBF6),
+        color: Colors.white,
         boxShadow: [
           BoxShadow(
             color: Colors.grey,
@@ -21,30 +21,33 @@ class DetailsPageBottomBar extends StatelessWidget {
           )
         ],
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'FILLED',
-                style: Styles.stoneTextStyles.copyWith(fontSize: 12),
-              ),
-              const Text(
-                '30%',
-                style: TextStyle(fontSize: 18),
-              ),
-            ],
-          ),
-          ButtonNormal(
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (_) => PurchasingPage()));
-            },
-            title: 'Tap to Invest',
-          ),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 18.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'FILLED',
+                  style: Styles.stoneTextStyles.copyWith(fontSize: 12),
+                ),
+                const Text(
+                  '30%',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ],
+            ),
+            ButtonNormal(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const PurchasingPage()));
+              },
+              title: 'Tap to Invest',
+            ),
+          ],
+        ),
       ),
     );
   }

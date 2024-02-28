@@ -28,7 +28,7 @@ class CompanyDetailsContainer extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .titleMedium
-                    ?.copyWith(fontWeight: FontWeight.w500, fontSize: 18),
+                    ?.copyWith(fontWeight: FontWeight.bold, fontSize: 18),
               ),
               const Icon(
                 Icons.keyboard_backspace,
@@ -37,7 +37,7 @@ class CompanyDetailsContainer extends StatelessWidget {
               Text(
                 'Keshav Industries',
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.bold,
                     fontSize: 18,
                     color: Styles.stoneColor),
               ),
@@ -54,103 +54,129 @@ class CompanyDetailsContainer extends StatelessWidget {
 
           //gridinfo
           GridInfo(
-            first: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'MIN INVT',
-                  style: Styles.stoneTextStyles.copyWith(fontSize: 14),
-                ),
-                Text.rich(
-                  TextSpan(
-                    text: '₹ ',
-                    style: Styles.stoneTextStyles.copyWith(fontSize: 16),
-                    children: [
-                      TextSpan(
-                        text: '1',
-                        style: Styles.stoneTextStyles
-                            .copyWith(fontSize: 16, color: Colors.black),
-                      ),
-                      TextSpan(
-                        text: ' Lakh',
-                        style: Styles.stoneTextStyles.copyWith(fontSize: 16),
-                      )
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            second: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'TENURE',
-                  style: Styles.stoneTextStyles.copyWith(fontSize: 14),
-                ),
-                Text.rich(
-                  TextSpan(
-                    text: '61',
+            first: Padding(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'MIN INVT',
                     style: Styles.stoneTextStyles
-                        .copyWith(fontSize: 16, color: Colors.black),
-                    children: [
-                      TextSpan(
-                        text: ' days',
-                        style: Styles.stoneTextStyles.copyWith(
-                          fontSize: 16,
-                        ),
-                      ),
-                    ],
+                        .copyWith(fontSize: 14, fontWeight: FontWeight.w500),
                   ),
-                ),
-              ],
+                  Text.rich(
+                    TextSpan(
+                      text: '₹ ',
+                      style: Styles.stoneTextStyles.copyWith(fontSize: 16),
+                      children: [
+                        TextSpan(
+                          text: '1',
+                          style: Styles.stoneTextStyles.copyWith(
+                            fontSize: 18,
+                            color: Colors.black,
+                          ),
+                        ),
+                        TextSpan(
+                          text: ' Lakh',
+                          style: Styles.stoneTextStyles.copyWith(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
-            third: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'NET YIELD',
-                  style: Styles.stoneTextStyles.copyWith(fontSize: 14),
-                ),
-                Text.rich(
-                  TextSpan(
-                    text: '13.23',
+            second: Padding(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'TENURE',
                     style: Styles.stoneTextStyles
-                        .copyWith(fontSize: 16, color: Colors.black),
-                    children: [
-                      TextSpan(
-                        text: ' %',
-                        style: Styles.stoneTextStyles.copyWith(
-                          fontSize: 16,
-                        ),
-                      ),
-                    ],
+                        .copyWith(fontSize: 14, fontWeight: FontWeight.w500),
                   ),
-                ),
-              ],
+                  Text.rich(
+                    TextSpan(
+                      text: '61',
+                      style: Styles.stoneTextStyles
+                          .copyWith(fontSize: 18, color: Colors.black),
+                      children: [
+                        TextSpan(
+                          text: ' days',
+                          style: Styles.stoneTextStyles.copyWith(
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
-            fourth: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'RAISED',
-                  style: Styles.stoneTextStyles.copyWith(fontSize: 14),
-                ),
-                Text.rich(
-                  TextSpan(
-                    text: '70',
+            third: Padding(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'NET YIELD',
                     style: Styles.stoneTextStyles
-                        .copyWith(fontSize: 16, color: Colors.black),
-                    children: [
-                      TextSpan(
-                        text: ' %',
-                        style: Styles.stoneTextStyles.copyWith(
-                          fontSize: 16,
-                        ),
-                      ),
-                    ],
+                        .copyWith(fontSize: 14, fontWeight: FontWeight.w500),
                   ),
-                ),
-              ],
+                  Text.rich(
+                    TextSpan(
+                      text: '13.23',
+                      style: Styles.stoneTextStyles.copyWith(
+                        fontSize: 18,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: ' %',
+                          style: Styles.stoneTextStyles.copyWith(
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            fourth: Padding(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'RAISED',
+                    style: Styles.stoneTextStyles
+                        .copyWith(fontSize: 14, fontWeight: FontWeight.w500),
+                  ),
+                  Text.rich(
+                    TextSpan(
+                      text: '70',
+                      style: Styles.stoneTextStyles.copyWith(
+                        fontSize: 18,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: ' %',
+                          style: Styles.stoneTextStyles.copyWith(
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],

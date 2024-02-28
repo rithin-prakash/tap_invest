@@ -18,7 +18,7 @@ class PurchasingPageBottombar extends StatelessWidget {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.grey,
+            color: Colors.black12,
             blurRadius: 3,
             spreadRadius: 1,
           )

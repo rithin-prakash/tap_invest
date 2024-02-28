@@ -59,7 +59,7 @@ class DocumetsItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        border: Border.all(width: .5),
+        border: Border.all(width: .5, color: Colors.black26),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(

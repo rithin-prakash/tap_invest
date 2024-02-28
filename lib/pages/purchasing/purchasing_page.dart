@@ -85,7 +85,7 @@ class _PurchasingPageState extends State<PurchasingPage> {
                                 ),
                                 Text(
                                   value,
-                                  style: const TextStyle(fontSize: 16),
+                                  style: const TextStyle(fontSize: 18),
                                 )
                               ],
                             )
@@ -124,7 +124,7 @@ class _PurchasingPageState extends State<PurchasingPage> {
                             Text.rich(
                               TextSpan(
                                 text: '13.11',
-                                style: TextStyle(fontSize: 16),
+                                style: TextStyle(fontSize: 18),
                                 children: [
                                   TextSpan(
                                       text: ' %', style: Styles.stoneTextStyles)
@@ -144,7 +144,7 @@ class _PurchasingPageState extends State<PurchasingPage> {
                             Text.rich(
                               TextSpan(
                                 text: '61',
-                                style: TextStyle(fontSize: 16),
+                                style: TextStyle(fontSize: 18),
                                 children: [
                                   TextSpan(
                                     text: ' days',
