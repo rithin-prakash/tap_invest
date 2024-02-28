@@ -39,6 +39,7 @@ dependencies:
   sliding_widget: ^0.0.5 #tried but not correct design vise
   swipeable_button: ^0.2.0
   lottie: ^3.1.0
+  animated_text_kit: ^4.2.2
 
 dev_dependencies:
   flutter_test:

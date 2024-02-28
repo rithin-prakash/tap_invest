@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:swipeable_button/swipeable_button.dart';
 
 import 'package:tap_invest/core/styles.dart';
-import 'package:tap_invest/pages/payment_done/payment_done_page.dart';
 
 class PurchasingPageBottombar extends StatelessWidget {
-  const PurchasingPageBottombar({super.key});
+  const PurchasingPageBottombar({super.key, required this.onSwipe});
+
+  final VoidCallback onSwipe;
 
   @override
   Widget build(BuildContext context) {
@@ -58,14 +59,7 @@ class PurchasingPageBottombar extends StatelessWidget {
             thumbColor: Styles.greenColor,
             thumbIconColor: Colors.white,
             borderRadius: BorderRadius.circular(4.0),
-            onSwipe: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => const PaymentDonePage(),
-                ),
-              );
-            },
+            onSwipe: onSwipe,
           )
           // SwipeableButton.simpleSlidable(
           //   thumbIconCompleted: Icons.arrow_forward,

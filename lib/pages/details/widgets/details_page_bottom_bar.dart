@@ -24,14 +24,14 @@ class DetailsPageBottomBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          const Column(
+          Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 'FILLED',
-                style: Styles.stoneTextStyles,
+                style: Styles.stoneTextStyles.copyWith(fontSize: 12),
               ),
-              Text(
+              const Text(
                 '30%',
                 style: TextStyle(fontSize: 18),
               ),
@@ -39,8 +39,8 @@ class DetailsPageBottomBar extends StatelessWidget {
           ),
           ButtonNormal(
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (_) => const PurchasingPage()));
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => PurchasingPage()));
             },
             title: 'Tap to Invest',
           ),
