@@ -7,6 +7,7 @@ class AssetImages {
   static const String dots = '${_svgPath}dots.svg';
   static const String flag = '${_svgPath}flag.svg';
   static const String verified = '${_svgPath}verified.svg';
+  static const String report = '${_svgPath}report.svg';
 
   static const String contractPng = '${_imagePath}contract.png';
 }
