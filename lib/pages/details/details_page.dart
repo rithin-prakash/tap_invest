@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:tap_invest/pages/details/widgets/company_details_container.dart';
+import 'package:tap_invest/pages/details/widgets/documents_container.dart';
 import 'package:tap_invest/pages/details/widgets/key_metrics_container.dart';
 import 'package:tap_invest/pages/details/widgets/logo_list.dart';
 import 'package:tap_invest/pages/details/widgets/hightlights.dart';
@@ -44,7 +45,12 @@ class DetailsPage extends StatelessWidget {
                   //key metrics
                   KeyMetricsContainer(),
 
-                  CommonDivider()
+                  CommonDivider(),
+
+                  //documents
+                  DocumentsContainer(),
+
+                  SizedBox(height: 20),
                 ],
               ),
             ),
