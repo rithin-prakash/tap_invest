@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 
 class AmountContainer extends StatelessWidget {
   const AmountContainer({
@@ -22,8 +23,7 @@ class AmountContainer extends StatelessWidget {
                   .titleLarge
                   ?.copyWith(fontSize: 24),
             ),
-            Container(
-              width: MediaQuery.of(context).size.width / 1.5,
+            Flexible(
               child: TextField(
                 inputFormatters: [
                   FilteringTextInputFormatter.digitsOnly,
