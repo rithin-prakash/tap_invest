@@ -11,23 +11,32 @@ class LogoList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(title),
-        SizedBox(
-          height: 50,
-          child: ListView(
-            padding: EdgeInsets.zero,
-            scrollDirection: Axis.horizontal,
-            children: [
-              LogoContainer(child: SvgPicture.asset(AssetImages.googleLogo)),
-              LogoContainer(child: SvgPicture.asset(AssetImages.googleLogo)),
-              LogoContainer(child: SvgPicture.asset(AssetImages.googleLogo)),
-            ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            title,
+            style: Theme.of(context)
+                .textTheme
+                .titleMedium
+                ?.copyWith(fontWeight: FontWeight.w500, fontSize: 18),
           ),
-        ),
-      ],
+          SizedBox(
+            height: 50,
+            child: ListView(
+              padding: EdgeInsets.zero,
+              scrollDirection: Axis.horizontal,
+              children: [
+                LogoContainer(child: SvgPicture.asset(AssetImages.googleLogo)),
+                LogoContainer(child: SvgPicture.asset(AssetImages.googleLogo)),
+                LogoContainer(child: SvgPicture.asset(AssetImages.googleLogo)),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

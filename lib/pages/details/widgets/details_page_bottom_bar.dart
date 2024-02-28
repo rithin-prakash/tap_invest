@@ -12,7 +12,7 @@ class DetailsPageBottomBar extends StatelessWidget {
     return Container(
       height: 100,
       decoration: const BoxDecoration(
-        color: Colors.white,
+        color: Color(0xFFFBFBF6),
         boxShadow: [
           BoxShadow(
             color: Colors.grey,

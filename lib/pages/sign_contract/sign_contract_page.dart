@@ -19,7 +19,7 @@ class SignContractPage extends StatelessWidget {
             const SizedBox(height: 12),
             ButtonNormal(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (_) => const AllDonePage(),

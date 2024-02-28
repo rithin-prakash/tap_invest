@@ -7,25 +7,31 @@ class Highlights extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Highlights',
-          style: Theme.of(context).textTheme.titleMedium,
-        ),
-        const SizedBox(height: 10),
-        SizedBox(
-          height: 180,
-          child: ListView(
-            scrollDirection: Axis.horizontal,
-            children: const [
-              HighlightsContainer(),
-              HighlightsContainer(),
-            ],
+    return Padding(
+      padding: const EdgeInsets.only(left: 20.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Highlights',
+            style: Theme.of(context)
+                .textTheme
+                .titleMedium
+                ?.copyWith(fontWeight: FontWeight.w500, fontSize: 18),
           ),
-        ),
-      ],
+          const SizedBox(height: 10),
+          SizedBox(
+            height: 180,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: const [
+                HighlightsContainer(),
+                HighlightsContainer(),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
