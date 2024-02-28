@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_svg/svg.dart';
+
+import 'package:tap_invest/core/assets_images.dart';
 import 'package:tap_invest/core/styles.dart';
 import 'package:tap_invest/core/shared_widgets/common_divider.dart';
 import 'package:tap_invest/pages/purchasing/widgets/amount_container.dart';
@@ -11,7 +14,12 @@ class PurchasingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        leading: InkWell(
+          child: SvgPicture.asset(AssetImages.backButton),
+          onTap: () => Navigator.pop(context),
+        ),
+      ),
       body: SafeArea(
         child: Column(
           children: [

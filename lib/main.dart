@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tap_invest/core/styles.dart';
 
 import 'package:tap_invest/pages/details/details_page.dart';
 
@@ -18,6 +19,14 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Inter',
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFFBFBF6)),
         useMaterial3: true,
+        appBarTheme: const AppBarTheme(
+          centerTitle: false,
+          color: Color(0xFFFBFBF6),
+          elevation: 0,
+          iconTheme: IconThemeData(
+            color: Styles.greenColor,
+          ),
+        ),
       ),
       home: const DetailsPage(),
     );

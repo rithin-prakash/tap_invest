@@ -12,6 +12,7 @@ class AssetImages {
   static const String doc2 = '${_svgPath}doc2.svg';
   static const String download = '${_svgPath}download.svg';
   static const String lightbuld = '${_svgPath}lightbulb.svg';
+  static const String backButton = '${_svgPath}back-button.svg';
 
   static const String contractPng = '${_imagePath}contract.png';
 }
