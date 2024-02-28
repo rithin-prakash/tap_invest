@@ -47,7 +47,7 @@ class AllDonePage extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 const Text(
-                  'All Done',
+                  'All Done!',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
