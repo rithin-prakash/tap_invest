@@ -38,6 +38,7 @@ dependencies:
   flutter_svg: ^2.0.10+1
   sliding_widget: ^0.0.5 #tried but not correct design vise
   swipeable_button: ^0.2.0
+  lottie: ^3.1.0
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +65,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/svgs/
+    - assets/lottie/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
