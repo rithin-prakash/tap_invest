@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:tap_invest/core/assets_images.dart';
+import 'package:tap_invest/pages/all_done/all_done_page.dart';
 import 'package:tap_invest/core/shared_widgets/button_normal.dart';
 
 class SignContractPage extends StatelessWidget {
@@ -16,7 +18,14 @@ class SignContractPage extends StatelessWidget {
             Image.asset(AssetImages.contractPng),
             const SizedBox(height: 12),
             ButtonNormal(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const AllDonePage(),
+                  ),
+                );
+              },
               title: 'Sign Contract',
             )
           ],
