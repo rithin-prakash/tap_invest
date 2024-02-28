@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:tap_invest/core/styles.dart';
 import 'package:tap_invest/core/shared_widgets/button_normal.dart';
+import 'package:tap_invest/pages/purchasing/purchasing_page.dart';
 
 class DetailsPageBottomBar extends StatelessWidget {
   const DetailsPageBottomBar({super.key});
@@ -37,7 +38,10 @@ class DetailsPageBottomBar extends StatelessWidget {
             ],
           ),
           ButtonNormal(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => const PurchasingPage()));
+            },
             title: 'Tap to Invest',
           ),
         ],

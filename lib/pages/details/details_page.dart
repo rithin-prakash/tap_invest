@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'package:tap_invest/core/assets_images.dart';
+import 'package:tap_invest/core/shared_widgets/common_divider.dart';
 import 'package:tap_invest/core/styles.dart';
 import 'package:tap_invest/pages/details/widgets/details_page_bottom_bar.dart';
 import 'package:tap_invest/pages/details/widgets/hightlights.dart';
@@ -78,9 +79,7 @@ class DetailsPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 20),
-                  const Divider(),
-                  const SizedBox(height: 20),
+                  const CommonDivider(),
 
                   //clients
                   const LogoList(title: 'Clients'),
@@ -88,11 +87,12 @@ class DetailsPage extends StatelessWidget {
                   //backed by
                   const LogoList(title: 'Backed By'),
 
-                  const SizedBox(height: 20),
-                  const Divider(),
-                  const SizedBox(height: 20),
+                  const CommonDivider(),
+
                   //highlights
-                  Highlights()
+                  const Highlights(),
+
+                  const CommonDivider(),
                 ],
               ),
             ),
